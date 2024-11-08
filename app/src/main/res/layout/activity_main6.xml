@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="315dp"
+        android:layout_height="39dp"
+        android:text="JUEGO MATEMATICO"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="430dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#FEE4C3"
+                android:text="El numero que usted penso es:"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_resp"
+                android:layout_width="430dp"
+                android:layout_height="match_parent"
+                android:background="#FEE4C3"
+                android:baselineAligned="false"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
